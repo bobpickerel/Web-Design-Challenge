@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Bootstrap Visualization Dashboard</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
+
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="../index.html" id="logo">Latitude</a>
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                 <li><a href="temp.html">Max Temperature</a></li>
+                  <li><a href="humidity.html">Humidity</a></li>
+                  <li><a href="cloudiness.html">Cloudiness</a></li>
+                  <li><a href="wind.html">Wind Speed</a></li>
+                </ul>
+              </li>
+              <li><a href="comparison.html">Comparison</a></li>
+              <li><a href="data.html">Data</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- Start of container -->
+    <div class="container description-content px-4">
+      <!--for each row, make a div that is class = "row"-->
+      <div class="row gx-5">
+        <!--for each row, specify columns (up to 12 allowed)-->
+        <div class="col-md-8">
+          <!--this is a column of size 8 (takes up 2/3 of the row)-->
+          <div class="p-3 border bg-light">
+            <h1 style="color:#4aaaa5"><b>Cloudiness</b></h1>
+            <!--add a break line for the full width of the column-->
+            <hr class="solid">
+            <a href="cloudiness.html">
+              <Img src="../assets/images/lat_cloudy_scatter.png" title="lat_cloudy" alt="lat_cloudy" width="600" height="400" >
+            </a>
+            <p>There does not seem to be a correlation between cloudiness and latitude.  For the day of data captured, cloudiness is more a factor of
+               local weather patterns and not distance from equator.  A longer term study of the cities over a longer period of time may show some better
+               trends.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-3 border bg-light">
+            <!--this is a column of size 4 (takes up 1/3 of the row)-->
+            <h1 style="color:#4aaaa5"><b>Visualizations</b></h1>
+            <hr class="solid">
+            <a href="temp.html">
+              <Img src="../assets/images/lat_temp_scatter.png" title="lat_temp" alt="lat_temp" width="150" height="150" >
+            </a>
+            <a href="humidity.html">
+              <Img src="../assets/images/lat_humidity_scatter.png" title="lat_humidity" alt="lat_humidity" width="150" height="150" >
+            </a>
+            <a href="cloudiness.html">
+              <Img src="../assets/images/lat_cloudy_scatter.png" title="lat_cloudy" alt="lat_cloudy" width="150" height="150" >
+            </a>
+            <a href="wind.html">
+              <Img src="../assets/images/lat_windy_scatter.png" title="lat_windy" alt="lat_windy" width="150" height="150" >
+            </a>
+          </div>
+        </div>
+
+      </div> <!--end of the first row-->
+    <!-- End of container -->
+    </div>
+
+    <!-- Start of footer -->
+    <footer class="footer navbar-fixed-bottom">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+        <b>&copy; Copyright Coding Bootcamp 2021</b>
+      </p>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
